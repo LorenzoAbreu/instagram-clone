@@ -1,10 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Biography from './components/biography';
+import EditProfile from './components/edit_profile';
+import Header from './components/header';
+import Highlights from './components/highlights';
+import Status from './components/status';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Header username='saham_amon' />
+      <Status publicacoes={36} seguidores={333} seguindo={495} />
+      <Biography name='Saham Amon' bio='Pagão 🍃
+Vegetariano 🐄
+Câncer ♋
+Programador 💻
+Florianópolis 🏞'
+/>
+      <EditProfile />
+      <Highlights />
       <StatusBar style="auto" />
     </View>
   );
