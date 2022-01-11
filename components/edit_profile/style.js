@@ -9,12 +9,14 @@ const style = StyleSheet.create({
     },
     fixer:{
         marginLeft: 25,
+        marginRight: 25,
+        flexDirection: 'row'
     },
     button:{
         // backgroundColor: '#f5f5f5',
         borderColor: '#f0f0f0',
         borderWidth: 2,
-        width: '90%',
+        width: '100%',
         height: 32,
         borderRadius: 5
     },
@@ -80,6 +82,24 @@ const style = StyleSheet.create({
         width: '100%',
         height: 1.2,
         backgroundColor: '#f5f5f5',
+    },
+    icon:{
+        paddingLeft: 10
+    },
+    icon2:{
+        right: 0,
+        position: 'absolute',
+        paddingRight: 10
+    },
+    topHeader:{
+        flexDirection: 'row',
+        width: '100%',
+    },
+    topHeaderText:{
+        paddingTop: 3,
+        paddingLeft: 15,
+        fontWeight: 'bold',
+        fontSize: 20
     }
     
 })

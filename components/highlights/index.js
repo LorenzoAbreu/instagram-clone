@@ -11,12 +11,12 @@ export default function Highlights(props) {
         <View style={style.wrapper}>
             <View style={style.highlightImage}>
                 <Image style={style.image} source={foto1} />
-                <Text style={style.highlightText}>Amigos</Text>
+                <Text style={style.highlightText}>Destaques</Text>
             </View>
 
             <View style={style.highlightImage}>
                 <Image style={style.image} source={foto2} />
-                <Text style={style.highlightText}>Amigos 2</Text>
+                <Text style={style.highlightText}>Destaques 2</Text>
             </View>
 
             <View style={style.novoBorda}>

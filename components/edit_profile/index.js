@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Pressable, TextInput, View, Alert, Modal, Text, Image, TouchableOpacity } from 'react-native'
 import style from './style'
+import { Icon } from 'react-native-elements/dist/icons/Icon';
 
 export default function EditProfile() {
 
@@ -16,13 +17,17 @@ export default function EditProfile() {
                 visible={modalVisible}
             >
                 <View style={style.modal}>
-                <View style={{flexDirection: 'row'}}>
+                <View style={style.topHeader}>
                     <TouchableOpacity onPress={() => {
                         setModalVisible(false);
-                    }}><Text style={{fontSize: 25, paddingLeft: 10, paddingTop: 5}}>X</Text></TouchableOpacity>
-                    <Text style={{paddingTop: 8, paddingLeft: 20, fontWeight: 'bold', fontSize: 20}}>
+                    }}><Icon size={35} color='#000000' style={style.icon} name='close' /></TouchableOpacity>
+                    <Text style={style.topHeaderText}>
                         Editar perfil
                     </Text>
+
+                    <TouchableOpacity style={style.icon2} onPress={() => {
+                        setModalVisible(false);
+                    }}><Icon size={35} color='#4597d6' name='check' /></TouchableOpacity>
                 </View>
 
                 <View style={style.modalImage}>
